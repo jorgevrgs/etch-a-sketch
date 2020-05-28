@@ -10,7 +10,15 @@
 <body>
     <div class="container">
         <div id="title"><h1>ETCH-A-SKETCH</h1></div>
-        <div id="grid"></div>
+        <div id="buttons">
+            <button id="black" class="buttons" data-mode="black">Black & White</button>
+            <button id="color" class="buttons" data-mode="color">Color</button>
+            <button id="reset" onclick="window.location.reload();">Reset</button>
+        </div>
+        <div id="form"><input id="input" value="16" type="number" min="1" max="32"></div>
+        <div id="wrap">
+            <div id="grid"></div>
+        </div>
     </div>
 </body>
 </html>
