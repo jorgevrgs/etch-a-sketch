@@ -71,8 +71,10 @@ function getColor(mode = 'color') {
 buttons.forEach(btn => {
     btn.addEventListener('click', e => {
         const btn = e.target;
-        toggleButton();
-        mode = btn.dataset.mode;
+        if (mode !== btn.dataset.mode) {
+            mode = btn.dataset.mode;
+            toggleButton();
+        }
     });
 });
 
